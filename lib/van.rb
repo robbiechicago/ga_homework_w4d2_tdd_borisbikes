@@ -2,6 +2,7 @@ class Van
 
   def initialize
     @bikes = []
+    @at_station = false
   end
 
   def bike_count
@@ -14,6 +15,10 @@ class Van
 
   def dropoff bike
     @bikes.delete(bike)
+  end
+
+  def van_at_station? 
+    @at_station = true
   end
 
 end
