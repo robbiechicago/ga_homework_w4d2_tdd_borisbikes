@@ -1,5 +1,6 @@
 class DockingStation
 
+  attr_accessor :bikes
   DEFAULT_CAPACITY = 30
 
   def initialize options = {}
